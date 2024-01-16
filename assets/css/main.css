@@ -2785,6 +2785,7 @@ button:disabled,
 
 .tiles article > a h2 {
     margin: 0;
+    position: absolute; /*MAXI*/
 }
 
 .tiles article > a .content {
@@ -2797,6 +2798,7 @@ button:disabled,
     line-height: 1.5;
     margin-top: 0.35em;
     opacity: 0;
+    position: absolute; /*MAXI*/
 }
 
 .tiles article > a .content > :last-child {
@@ -2832,6 +2834,7 @@ body:not(.is-touch) .tiles article:hover > .image {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
+    /* transform: rotateY(180deg); */ /*MAXI - da vuelta la tarjeta*/
 }
 
 body:not(.is-touch) .tiles article:hover > .image:before {
@@ -2842,6 +2845,14 @@ body:not(.is-touch) .tiles article:hover > .image:before {
 body:not(.is-touch) .tiles article:hover > .image:after {
     opacity: 0;
 }
+
+/*INICIO MAXI*/
+body:not(.is-touch) .tiles article:hover a h2 {
+    /* opacity: 0; */
+    display: none;
+    /* transition: all 2s; */
+}
+/* FIN MAXI*/
 
 body:not(.is-touch) .tiles article:hover .content {
     max-height: 15em;
