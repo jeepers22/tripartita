@@ -1,5 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap");
 
 /*
 	Phantom by HTML5 UP
@@ -215,7 +216,8 @@ input,
 select,
 textarea {
     color: #585858;
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    /* font-family: "Source Sans Pro", Helvetica, sans-serif; */
+    font-family: "Montserrat", sans-serif;
     font-size: 16pt;
     font-weight: 300;
     line-height: 1.75;
@@ -3023,13 +3025,13 @@ body.is-touch .tiles article .content {
     position: relative;
     height: 3em;
     line-height: 3em;
-    padding-left: 2em;
+    padding-left: 3em;
     /* padding: 0 1.5em; */
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 4px;
     border: 0;
-    font-size: 1.1em;
-    font-weight: 700;
+    font-size: 1em;
+    font-weight: 500;
     /* letter-spacing: 0.35em; */
     text-transform: uppercase;
 }
@@ -3317,7 +3319,7 @@ body.is-menu-visible #menu .close {
 }
 
 .hero h1 {
-    max-width: 10em;
+    max-width: 17em;
     text-align: center;
     line-height: 1.2;
 }
