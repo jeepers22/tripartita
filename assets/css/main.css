@@ -301,11 +301,11 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 900;
+    font-weight: 700;
     line-height: 1.5;
     margin: 0 0 2em 0;
     text-transform: uppercase;
-    letter-spacing: 0.35em;
+    /* letter-spacing: 0.35em; */
 }
 
 h2 a,
@@ -2665,6 +2665,36 @@ button:disabled,
     opacity: 0.25;
 }
 
+/* Mision */
+
+.mision {
+    max-width: 100%;
+    height: 400px;
+    /* text-align: center; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: #000 solid 1px;
+}
+
+.mision article {
+    max-width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.mision img {
+    width: 148px;
+}
+
+.mision article p span {
+    font-weight: 700;
+}
+
 /* Tiles */
 
 .tiles {
@@ -2728,7 +2758,7 @@ button:disabled,
     /* opacity: 0.8; */
 }
 
-.tiles article > .image:after {
+/* .tiles article > .image:after {
     pointer-events: none;
     -moz-transition: opacity 0.5s ease;
     -webkit-transition: opacity 0.5s ease;
@@ -2747,7 +2777,7 @@ button:disabled,
     background-size: 100% 100%;
     opacity: 0.25;
     z-index: 2;
-}
+} */
 
 .tiles article > a {
     display: -moz-flex;
@@ -2883,7 +2913,7 @@ body:not(.is-touch) .tiles article:hover .content {
 }
 
 * + .tiles {
-    margin-top: 2em;
+    margin-top: 4em;
 }
 
 body.is-preload .tiles article {
@@ -3295,22 +3325,10 @@ body.is-menu-visible #menu .close {
     opacity: 1;
 }
 
-/* Main */
-
-#main {
-    padding: 2em 0 6em 0;
-}
-
-@media screen and (max-width: 736px) {
-    #main {
-        padding: 0em 0 4em 0;
-    }
-}
-
 /* Hero */
 
 .hero {
-    height: 450px;
+    height: 620px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -3331,6 +3349,18 @@ body.is-menu-visible #menu .close {
 
 .hero-p span {
     font-weight: bold;
+}
+
+/* Main */
+
+#main {
+    padding: 2em 0 6em 0;
+}
+
+@media screen and (max-width: 736px) {
+    #main {
+        padding: 0em 0 4em 0;
+    }
 }
 
 /* Footer */
