@@ -2665,19 +2665,24 @@ button:disabled,
     opacity: 0.25;
 }
 
-/* Mision */
+/* Mision - Team */
 
-.mision {
+.mision,
+.team {
     max-width: 100%;
     height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.mision {
     border-bottom: #000 solid 1px;
 }
 
 .mision article,
-.services article {
+.services article,
+.team article {
     max-width: 65%;
     display: flex;
     flex-direction: column;
@@ -2686,12 +2691,17 @@ button:disabled,
     gap: 40px;
 }
 
-.mision img {
+.mision img,
+.team img {
     width: 148px;
 }
 
 .mision article p span {
     font-weight: 700;
+}
+
+.team {
+    margin-top: 4em;
 }
 
 /* Services */
@@ -2708,6 +2718,22 @@ button:disabled,
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.services article .heading-services {
+    position: relative;
+}
+
+.services article .heading-services h2,
+.services article .heading-services img {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.services article .heading-services h2 {
+    z-index: 9999;
+    color: #ffffff;
+    font-size: 1.8em;
 }
 
 /* Tiles */
@@ -3369,7 +3395,7 @@ body.is-menu-visible #menu .close {
 /* Main */
 
 #main {
-    padding: 2em 0 6em 0;
+    padding: 2em 0;
 }
 
 @media screen and (max-width: 736px) {
