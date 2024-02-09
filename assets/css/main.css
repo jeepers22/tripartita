@@ -3425,15 +3425,38 @@ body.is-menu-visible #menu .close {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+.hero .dinamic-logo {
+    position: relative;
+    margin-top: 3em;
+}
+
+.hero .dinamic-logo > * {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.hero .dinamic-logo img[data-triangulo="izq"] {
+    left: -1.5em;
+    top: 1.2em;
+}
+
+.hero .dinamic-logo img[data-triangulo="der"] {
+    left: 0.5em;
+    top: 2em;
+}
+
 .hero h1 {
     max-width: 17em;
     text-align: center;
     line-height: 1.2;
+    margin-top: 2.5em;
+    z-index: 999;
 }
 
 .hero-p {
     max-width: 50em;
     text-align: center;
+    z-index: 888;
 }
 
 .hero-p span {
