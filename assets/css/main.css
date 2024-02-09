@@ -338,6 +338,8 @@ h6 {
 
 p {
     font-size: 1.3em;
+    line-height: 1.2;
+    text-align: center;
 }
 
 @media screen and (max-width: 980px) {
@@ -2710,11 +2712,22 @@ button:disabled,
 .mision article,
 .services article,
 .team article {
-    max-width: 65%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.mision article {
+    max-width: 60%;
+}
+
+.services article {
+    max-width: 70%;
+}
+
+.team article {
+    max-width: 80%;
 }
 
 .mision article,
@@ -2911,7 +2924,7 @@ button:disabled,
     transition: max-height 0.5s ease, opacity 0.5s ease;
     width: 100%;
     /* max-height: 0; */
-    line-height: 1.5em;
+    line-height: 1.5;
     margin-top: 0.35em;
     opacity: 0;
     position: absolute; /*MAXI*/
@@ -2989,7 +3002,7 @@ body:not(.is-touch) .tiles article:hover .content {
 }
 
 * + .tiles {
-    margin-top: 2em;
+    margin-top: 0.8em;
 }
 
 body.is-preload .tiles article {
@@ -3209,7 +3222,7 @@ body.is-touch .tiles article .content {
     }
 
     #header nav ul li a[href="#wrapper"],
-    #header nav ul li a[href="#tiles"],
+    #header nav ul li a[href="#services"],
     #header nav ul li a[href="#footer"] {
         display: none;
     }
