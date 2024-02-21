@@ -2697,6 +2697,12 @@ button:disabled,
 
 /* Mision - Team */
 
+.mision p,
+.services p,
+.team p {
+    color: #000;
+}
+
 .mision,
 .team {
     max-width: 100%;
@@ -3418,7 +3424,7 @@ body.is-menu-visible #menu .close {
 /* Hero */
 
 .hero {
-    padding: 90px 0;
+    padding: 4em 1em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -3430,6 +3436,7 @@ body.is-menu-visible #menu .close {
     background-position: center;
     background-size: cover;
     /* background-attachment: fixed; */
+    /* transition: all 1s ease-out; */
 }
 
 .hero .dinamic-logo {
@@ -3443,13 +3450,37 @@ body.is-menu-visible #menu .close {
 }
 
 .hero .dinamic-logo img[data-triangulo="izq"] {
+    transform: translate(-35em, 10em);
     left: -1.5em;
     top: 1.2em;
+    transition: all 0.9s ease-out;
+}
+
+.hero:hover .dinamic-logo img[data-triangulo="izq"] {
+    transform: translate(-50%, -50%);
+    transition: all 0.8s ease-out;
+}
+
+.hero .dinamic-logo img[data-triangulo="mid"] {
+    transform: translate(-10em, -5em);
+    transition: all 0.9s ease-out;
+}
+
+.hero:hover .dinamic-logo img[data-triangulo="mid"] {
+    transform: translate(-50%, -50%);
+    transition-duration: 0.5s;
 }
 
 .hero .dinamic-logo img[data-triangulo="der"] {
+    transform: translate(25em, 3.8em);
     left: 0.5em;
     top: 2em;
+    transition: all 0.9s ease-out;
+}
+
+.hero:hover .dinamic-logo img[data-triangulo="der"] {
+    transform: translate(-50%, -50%);
+    transition-duration: 0.7s;
 }
 
 .hero h1 {
