@@ -251,10 +251,9 @@ a {
     border-bottom: dotted 1px rgba(88, 88, 88, 0.5);
 }
 
-a:hover {
-    border-bottom-color: transparent;
+/* a:hover {
     color: #f2849e !important;
-}
+} */
 
 strong,
 b {
@@ -1941,55 +1940,46 @@ header p {
     font-family: "Font Awesome 5 Brands";
 }
 
-/* .icon.style2 {
-    -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
-        border-color 0.2s ease-in-out;
-    -webkit-transition: background-color 0.2s ease-in-out,
-        color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-    -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
-        border-color 0.2s ease-in-out;
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
-        border-color 0.2s ease-in-out;
-    background-color: #585858;
-    border: solid 1px #c9c9c9;
-    border-radius: 50%;
-    width: 4em;
-    height: 4em;
-    display: inline-block;
-    text-align: center;
-    line-height: 2.65em;
-    color: #fff;
-} */
+.icon.style2 {
+    -moz-transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
+}
 
 .icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 4em;
-    height: 4em;
+    width: 3.5em;
+    height: 3.5em;
     border-radius: 50%;
     color: #fff;
-    background-color: #585858;
+    background-color: #424242;
 }
 
 .icon.fa-facebook {
-    color: #585858;
+    color: #424242;
     background-color: inherit;
     height: 4em;
-    top: 0.5em;
+    top: 0.55em;
 }
 
 .icon.style2:before {
-    font-size: 2.7em;
+    font-size: 2.4em;
 }
 
 .icon.style2.fa-facebook:before {
-    font-size: 4.2em;
+    font-size: 3.65em;
 }
 
 .icon.style2:hover {
-    color: #f2849e;
-    border-color: #f2849e;
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+
+.icon.fa-facebook:hover {
+    top: 0.4em;
 }
 
 .icon.style2:active {
@@ -2275,7 +2265,7 @@ textarea {
     background-color: transparent;
     border: none;
     border-radius: 0;
-    border-bottom: solid 1px #c9c9c9;
+    border-bottom: solid 1px #6b6b6b;
     color: inherit;
     display: block;
     outline: 0;
@@ -2585,20 +2575,20 @@ button,
         box-shadow 0.2s ease-in-out;
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
         box-shadow 0.2s ease-in-out;
-    background-color: transparent;
+    background-color: #424242 !important;
     /* border-radius: 4px; */
     border: 0;
-    box-shadow: inset 0 0 0 2px #585858;
-    color: #585858 !important;
+    box-shadow: inset 0 0 0 2px #424242;
+    color: #424242 !important;
     cursor: pointer;
     display: inline-block;
     font-size: 1em;
     /* font-weight: 900; */
-    height: 3.5em;
+    /* height: 2.5em; */
     /* letter-spacing: 0.35em; */
-    line-height: 3.45em;
+    /* line-height: 3.45em; */
     overflow: hidden;
-    padding: 0 2.5em;
+    padding: 0.5em 2em;
     text-align: center;
     text-decoration: none;
     text-overflow: ellipsis;
@@ -2768,7 +2758,7 @@ button:disabled,
 .headings {
     position: relative;
     padding: 0 0.5em;
-    font-size: 1.8em;
+    font-size: 2.2em;
     color: #fff;
     z-index: 999;
     margin-bottom: 1.2em;
@@ -2791,6 +2781,10 @@ button:disabled,
     background-color: #ad00ff;
 }
 
+.headings[data-heading="seguinos"] {
+    margin-bottom: 0.5em;
+}
+
 /* Tiles */
 
 .tiles {
@@ -2805,7 +2799,7 @@ button:disabled,
     justify-content: center;
     position: relative;
     /* margin: -2.5em 0 0 -2.5em; */
-    gap: 2em;
+    gap: 1.5em;
     padding: 0 2.5em;
 }
 
@@ -2816,6 +2810,7 @@ button:disabled,
     transition: transform 0.5s ease, opacity 0.5s ease;
     position: relative;
     width: calc(33.33333% - 2.5em);
+    /* width: calc(30.33333%); */
     /* margin: 2.5em 0 0 2.5em; */
 }
 
@@ -2919,9 +2914,10 @@ button:disabled,
 }
 
 .tiles article > a h2 {
-    margin: 0;
+    margin: 0 1em;
     position: absolute; /*MAXI*/
     transition: all 0.2s;
+    font-size: 1.3em;
 }
 
 .tiles article > a .content {
@@ -2931,11 +2927,13 @@ button:disabled,
     transition: max-height 0.5s ease, opacity 0.5s ease;
     width: 100%;
     /* max-height: 0; */
-    line-height: 1.5;
-    margin-top: 0.35em;
+    /* margin-top: 0.35em; */
+    padding: 0 1.5em;
     opacity: 0;
     position: absolute; /*MAXI*/
     transition: all 0.2s;
+    font-size: 0.8em;
+    text-align: justify;
 }
 
 .tiles article > a .content > :last-child {
@@ -2979,10 +2977,10 @@ button:disabled,
 }
 
 body:not(.is-touch) .tiles article:hover > .image {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
+    -moz-transform: scale(1.06);
+    -webkit-transform: scale(1.06);
+    -ms-transform: scale(1.06);
+    transform: scale(1.06);
     /* transform: rotateY(180deg); */ /*MAXI - da vuelta la tarjeta*/
 }
 
@@ -3151,8 +3149,8 @@ body.is-touch .tiles article .content {
     position: relative;
     height: 3em;
     line-height: 3em;
-    padding-left: 3em;
-    /* padding: 0 1.5em; */
+    margin-left: 3em;
+    padding: 0 0.7em;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 4px;
     border: 0;
@@ -3558,8 +3556,8 @@ body.is-menu-visible #menu .close {
     padding: 0;
     margin-top: 5em;
     list-style: none;
-    font-size: 0.8em;
-    color: rgba(88, 88, 88, 0.5);
+    font-size: 1.1em;
+    color: rgba(88, 88, 88, 0.9);
 }
 
 #footer > .inner .copyright a {
