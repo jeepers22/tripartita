@@ -2822,8 +2822,8 @@ button:disabled,
     position: relative;
     display: block;
     width: 100%;
-    border-radius: 4px;
-    overflow: hidden;
+    /* border-radius: 4px; */
+    /* overflow: hidden; */
 }
 
 .tiles article > .image img {
@@ -3506,6 +3506,13 @@ body.is-menu-visible #menu .close {
     line-height: 1.2;
     margin-top: 2.5em;
     z-index: 999;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+    -webkit-animation: slide-left 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both,
+        text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+    animation: slide-left 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both,
+        text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 .hero-p {
@@ -3515,6 +3522,67 @@ body.is-menu-visible #menu .close {
     z-index: 888;
     text-shadow: 1px 0px 0px black, 0px 1px 0px black, -1px 0px 0px black,
         0px -1px 0px black;
+    -webkit-transform: translateY(15px);
+    transform: translateY(15px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+    -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s
+            both,
+        text-focus-in 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.8s both;
+    animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both,
+        text-focus-in 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.8s both;
+}
+
+/* ANIMATIONS MAXI */
+
+@-webkit-keyframes text-focus-in {
+    to {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+@keyframes text-focus-in {
+    to {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slide-top {
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+@keyframes slide-top {
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes slide-left {
+    0% {
+        -webkit-transform: translateX(100px);
+        transform: translateX(100px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes slide-left {
+    0% {
+        -webkit-transform: translateX(100px);
+        transform: translateX(100px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
 }
 
 .hero-p span {
