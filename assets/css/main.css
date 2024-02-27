@@ -3447,7 +3447,8 @@ body.is-menu-visible #menu .close {
     justify-content: center;
     align-items: center;
     background-color: rgba(46, 18, 56, 0.8);
-    background-image: url("/images/hero.png");
+    /* background-image: url("/images/hero.png"); */
+    background-image: url("https://res.cloudinary.com/datqk3byv/image/upload/v1709058791/hero_aefvo1.png");
     background-blend-mode: darken;
     background-repeat: no-repeat;
     background-position: center;
