@@ -3442,7 +3442,7 @@ body.is-menu-visible #menu .close {
 /* Hero */
 
 .hero {
-    padding: 4em 1em;
+    padding: 12em 1em 4em;
     display: flex;
     flex-direction: column;
     justify-content: center;
