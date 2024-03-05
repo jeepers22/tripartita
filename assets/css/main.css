@@ -2685,6 +2685,44 @@ button:disabled,
     opacity: 0.25;
 }
 
+/* Welcome */
+
+.hero-welcome {
+    position: sticky;
+    top: -600px;
+    z-index: -1;
+}
+
+.welcome {
+    padding: 10em 0 10em 17em;
+    background-color: #ededed;
+}
+
+.welcome p {
+    max-width: 27em;
+    font-size: 1em;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.welcome p span {
+    font-weight: 700;
+}
+
+/* Rocket */
+
+/* QUITAR HUECO ENTRE ROCKET Y MAIN */
+.main {
+    line-height: 0;
+}
+
+.rocket-img {
+    /* display: block; */
+    vertical-align: top;
+}
+
+/* FIN QUITAR HUECO ENTRE ROCKET Y MAIN */
+
 /* Mision - Team */
 
 .mision p,
@@ -3517,7 +3555,6 @@ body.is-menu-visible #menu .close {
     max-width: 17em;
     text-align: center;
     line-height: 1;
-    /* margin-top: 2.5em; */
     z-index: 999;
     -webkit-filter: blur(12px);
     filter: blur(12px);
@@ -3528,7 +3565,7 @@ body.is-menu-visible #menu .close {
         text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
-.hero-p {
+/* .hero-p {
     max-width: 40em;
     color: #fff;
     text-align: center;
@@ -3545,7 +3582,7 @@ body.is-menu-visible #menu .close {
         text-focus-in 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.8s both;
     animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both,
         text-focus-in 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.8s both;
-}
+} */
 
 /* ANIMATIONS MAXI */
 
@@ -3605,7 +3642,8 @@ body.is-menu-visible #menu .close {
 /* Main */
 
 #main {
-    padding: 4em 0;
+    padding: 0 0 4em 0;
+    background-color: #fff;
 }
 
 @media screen and (max-width: 736px) {
