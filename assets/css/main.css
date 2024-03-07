@@ -334,9 +334,10 @@ h6 {
 
 p {
     font-size: 1em;
-    line-height: 1.2;
+    line-height: 1.5;
     text-align: center;
     margin: 0 0 2em 0;
+    color: #000;
 }
 
 @media screen and (max-width: 980px) {
@@ -2691,7 +2692,7 @@ button:disabled,
 }
 
 .welcome {
-    padding: 10em 0 10em 17em;
+    padding: 9em 0 8em 11em;
     background-color: #ededed;
 }
 
@@ -2791,8 +2792,8 @@ button:disabled,
 
 .headings {
     position: relative;
-    padding: 0 0.5em;
-    font-size: 2.2em;
+    padding: 0 0.8em;
+    font-size: 1.8em;
     color: #fff;
     z-index: 999;
     margin-bottom: 1.2em;
@@ -2801,12 +2802,12 @@ button:disabled,
 .headings::after {
     position: absolute;
     content: attr(data-heading);
-    height: 1.1em;
+    height: 1.2em;
     color: transparent;
     background-color: #00c2ff;
-    padding: 0 0.5em;
+    padding: 0 0.8em;
     left: 0;
-    top: 0.2em;
+    top: 0.15em;
     transform: rotate(-1deg);
     z-index: -1;
 }
@@ -3476,7 +3477,7 @@ body.is-menu-visible #menu .close {
 /* Hero */
 
 .hero {
-    padding: 12em 1em 4em;
+    padding: 13em 1em 4em;
     display: flex;
     flex-direction: column;
     justify-content: center;
