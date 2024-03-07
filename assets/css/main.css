@@ -2748,18 +2748,7 @@ button:disabled,
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.mision article {
-    max-width: 60%;
-}
-
-.services article {
-    max-width: 70%;
-}
-
-.team article {
-    max-width: 80%;
+    max-width: 58%;
 }
 
 .mision article,
@@ -2772,7 +2761,8 @@ button:disabled,
     width: 112px;
 }
 
-.mision article p span {
+.mision article p span,
+.team article p span {
     font-weight: 700;
 }
 
@@ -2793,7 +2783,7 @@ button:disabled,
 .headings {
     position: relative;
     padding: 0 0.8em;
-    font-size: 1.8em;
+    font-size: 1.6em;
     color: #fff;
     z-index: 999;
     margin-bottom: 1.2em;
