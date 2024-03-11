@@ -2713,7 +2713,7 @@ button:disabled,
 }
 
 .welcome {
-    padding: 9em 0 8em 11em;
+    padding: 11em 0 7.3em 11em;
     background-color: #ededed;
 }
 
@@ -2768,7 +2768,7 @@ button:disabled,
 .mision {
     border-bottom: #000 solid 1px;
     margin-top: 80px;
-    padding-top: 130px;
+    padding-top: 50px;
     z-index: 999;
 }
 
@@ -3560,12 +3560,26 @@ body.is-menu-visible #menu .close {
     transition-duration: 0.7s;
 }
 
+.hero .title .title-small,
+.hero .title .title-big {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+}
+
 .hero .title .title-small {
     font-size: 2.1em;
     color: #ff9d2a;
     margin-bottom: 0.1em;
     text-align: left;
     padding-left: 1.7em;
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+    -webkit-animation: slide-right 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+            both,
+        text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+    animation: slide-right 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both,
+        text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 .hero .title .title-big {
@@ -3576,9 +3590,8 @@ body.is-menu-visible #menu .close {
     text-align: center;
     line-height: 1;
     z-index: 999;
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
-    opacity: 0;
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
     -webkit-animation: slide-left 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both,
         text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
     animation: slide-left 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both,
@@ -3635,21 +3648,26 @@ body.is-menu-visible #menu .close {
 }
 
 @-webkit-keyframes slide-left {
-    0% {
-        -webkit-transform: translateX(100px);
-        transform: translateX(100px);
-    }
-    100% {
+    to {
         -webkit-transform: translateX(0);
         transform: translateX(0);
     }
 }
 @keyframes slide-left {
-    0% {
-        -webkit-transform: translateX(100px);
-        transform: translateX(100px);
+    to {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
     }
-    100% {
+}
+
+@-webkit-keyframes slide-right {
+    to {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes slide-right {
+    to {
         -webkit-transform: translateX(0);
         transform: translateX(0);
     }
