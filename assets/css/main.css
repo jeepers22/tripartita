@@ -3575,10 +3575,10 @@ body.is-menu-visible #menu .close {
     padding-left: 1.7em;
     -webkit-transform: translateX(-100px);
     transform: translateX(-100px);
-    -webkit-animation: slide-right 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-            both,
+    -webkit-animation: slide-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+            0.2s both,
         text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-    animation: slide-right 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both,
+    animation: slide-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s both,
         text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
@@ -3590,8 +3590,8 @@ body.is-menu-visible #menu .close {
     text-align: center;
     line-height: 1;
     z-index: 999;
-    -webkit-transform: translateX(100px);
-    transform: translateX(100px);
+    -webkit-transform: translateX(150px);
+    transform: translateX(150px);
     -webkit-animation: slide-left 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both,
         text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
     animation: slide-left 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both,
@@ -3711,7 +3711,7 @@ body.is-menu-visible #menu .close {
     -ms-flex-direction: row;
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: 4em;
+    padding-bottom: 2em;
 }
 
 #footer > .inner > * > :last-child {
