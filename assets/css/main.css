@@ -2729,9 +2729,20 @@ button:disabled,
 
 /* Rocket */
 
-/* QUITAR HUECO ENTRE ROCKET Y MAIN */
+/* QUITA EL HUECO ENTRE ROCKET Y MAIN */
 .main {
     line-height: 0;
+}
+
+#wrapper {
+    position: relative;
+}
+
+.rocket {
+    position: absolute;
+    width: 100%;
+    top: 700px;
+    z-index: -1;
 }
 
 .rocket-img {
@@ -2756,7 +2767,9 @@ button:disabled,
 
 .mision {
     border-bottom: #000 solid 1px;
-    padding-top: 0;
+    margin-top: 80px;
+    padding-top: 130px;
+    z-index: 999;
 }
 
 .mision article,
