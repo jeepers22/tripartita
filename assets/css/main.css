@@ -2854,11 +2854,10 @@ button:disabled,
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     position: relative;
     /* margin: -2.5em 0 0 -2.5em; */
     gap: 1.5em;
-    padding: 0 2.5em;
 }
 
 .tiles article {
@@ -2867,7 +2866,7 @@ button:disabled,
     -ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
     transition: transform 0.5s ease, opacity 0.5s ease;
     position: relative;
-    width: calc(33.33333% - 2.5em);
+    width: 31.5%;
     /* width: calc(30.33333%); */
     /* margin: 2.5em 0 0 2.5em; */
 }
@@ -2999,39 +2998,39 @@ button:disabled,
 }
 
 .tiles article.style1 > .image:before {
-    background-color: #fd7288;
+    background-color: #1dbad8;
 }
 
 .tiles article.style2 > .image:before {
-    background-color: #50bfff;
+    background-color: #35950e;
 }
 
 .tiles article.style3 > .image:before {
-    background-color: #50e3c9;
+    background-color: #355abb;
 }
 
 .tiles article.style4 > .image:before {
-    background-color: #d3569b;
+    background-color: #dc2a40;
 }
 
 .tiles article.style5 > .image:before {
-    background-color: #6f8df3;
+    background-color: #ff8a20;
 }
 
 .tiles article.style6 > .image:before {
-    background-color: #4ca4d2;
+    background-color: #843aaa;
 }
 
 .tiles article.style7 > .image:before {
-    background-color: #49c3ba;
+    background-color: #58ca2a;
 }
 
 .tiles article.style8 > .image:before {
-    background-color: #e98667;
+    background-color: #c814c1;
 }
 
 .tiles article.style9 > .image:before {
-    background-color: #b16ee0;
+    background-color: #33cfcf;
 }
 
 body:not(.is-touch) .tiles article:hover > .image {
@@ -3043,8 +3042,8 @@ body:not(.is-touch) .tiles article:hover > .image {
 }
 
 body:not(.is-touch) .tiles article:hover > .image:before {
-    background-color: #333333;
-    opacity: 0.35;
+    background-color: transparent;
+    opacity: 1;
 }
 
 body:not(.is-touch) .tiles article:hover > .image:after {
@@ -3076,6 +3075,11 @@ body.is-preload .tiles article {
 body.is-touch .tiles article .content {
     max-height: 15em;
     opacity: 1;
+}
+
+.tiles .content p {
+    font-size: 1.2em;
+    color: #fff;
 }
 
 @media screen and (max-width: 1280px) {
