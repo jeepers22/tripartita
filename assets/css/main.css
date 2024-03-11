@@ -2708,12 +2708,12 @@ button:disabled,
 
 .hero-welcome {
     position: sticky;
-    top: -600px;
+    top: -650px;
     z-index: -1;
 }
 
 .welcome {
-    padding: 11em 0 7.3em 11em;
+    padding: 9em 0 10em 11em;
     background-color: #ededed;
 }
 
@@ -2801,10 +2801,6 @@ button:disabled,
 .mision article p span,
 .team article p span {
     font-weight: 700;
-}
-
-.team {
-    /* margin-top: 4em; */
 }
 
 /* Services */
@@ -3180,26 +3176,29 @@ body.is-touch .tiles article .content {
     vertical-align: middle;
 }
 
-/*#header .logo .symbol {
-    margin-right: 0.65em;
-}*/
-
 #header .logo .symbol img {
     display: block;
     width: 12.3em;
     --height: 2em;
 }
 
-/* #header nav {
-    position: fixed;
-    right: 2em;
-    top: 2em;
-    z-index: 10000;
-} */
-
 #header nav {
     display: flex;
     align-items: center;
+}
+
+#header nav,
+#header .logo {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+    -webkit-animation: slide-top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s
+            both,
+        text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+    animation: slide-top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both,
+        text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 #header nav ul {
@@ -3598,25 +3597,6 @@ body.is-menu-visible #menu .close {
         text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
-/* .hero-p {
-    max-width: 40em;
-    color: #fff;
-    text-align: center;
-    z-index: 888;
-    text-shadow: 1px 0px 0px black, 0px 1px 0px black, -1px 0px 0px black,
-        0px -1px 0px black;
-    -webkit-transform: translateY(15px);
-    transform: translateY(15px);
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
-    opacity: 0;
-    -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s
-            both,
-        text-focus-in 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.8s both;
-    animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both,
-        text-focus-in 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.8s both;
-} */
-
 /* ANIMATIONS MAXI */
 
 @-webkit-keyframes text-focus-in {
@@ -3693,7 +3673,8 @@ body.is-menu-visible #menu .close {
 /* Footer */
 
 #footer {
-    padding-top: 4em;
+    padding-top: 5em;
+    /* margin-top: 500px; */
     background-color: #f6f6f6;
 }
 
