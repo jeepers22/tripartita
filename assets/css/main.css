@@ -3726,6 +3726,7 @@ body.is-menu-visible #menu .close {
     background-color: #fff;
     padding: 3.3em 0 1.75em 0;
     list-style: none;
+    overflow: hidden;
     /* FULL - WIDTH */
     /* width: 100vw;
     position: relative;
