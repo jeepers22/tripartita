@@ -1987,7 +1987,8 @@ header p {
 }
 
 .icon.fa-instagram:hover {
-    background-image: url("/images/instagram.jpg");
+    /* background-image: url("/images/instagram.jpg"); */
+    background-image: url("https://res.cloudinary.com/datqk3byv/image/upload/v1710257692/instagram_hurarc.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
