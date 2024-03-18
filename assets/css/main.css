@@ -281,8 +281,14 @@ h1 a {
 
 @media screen and (max-width: 736px) {
     h1 {
-        font-size: 2em;
+        font-size: 3.2em;
         margin: 0 0 1em 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2em;
     }
 }
 
@@ -2728,6 +2734,16 @@ button:disabled,
     font-weight: 700;
 }
 
+@media screen and (max-width: 736px) {
+    .welcome {
+        padding: 3.5em 8.7em 5em 3em;
+    }
+
+    .rocket {
+        top: 432px !important;
+    }
+}
+
 /* Rocket */
 
 /* QUITA EL HUECO ENTRE ROCKET Y MAIN */
@@ -3291,9 +3307,9 @@ body.is-touch .tiles article .content {
 }
 
 @media screen and (max-width: 736px) {
-    #header {
+    /* #header {
         padding: 2em 1.5em;
-    }
+    } */
 
     #header nav {
         right: 0.5em;
@@ -3554,9 +3570,9 @@ body.is-menu-visible #menu .close {
 }
 
 .hero .dinamic-logo img[data-triangulo="der"] {
-    transform: translate(25em, 3.8em);
+    /* transform: translate(25em, 3.8em);
     left: 0.5em;
-    top: 2em;
+    top: 2em; */
     transition: all 0.9s ease-out;
 }
 
@@ -3601,6 +3617,19 @@ body.is-menu-visible #menu .close {
         text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
     animation: slide-left 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both,
         text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+/* APAGADO DE ANIMACIONES PARA MOBILE */
+@media screen and (max-width: 738px) {
+    #header nav,
+    #header .logo,
+    .hero .title .title-small,
+    .hero .title .title-big {
+        animation: none;
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
 }
 
 /* ANIMATIONS MAXI */
@@ -3661,6 +3690,30 @@ body.is-menu-visible #menu .close {
 
 .hero-p span {
     font-weight: bold;
+}
+
+@media screen and (max-width: 736px) {
+    .hero {
+        padding: 8em 1em 1.5em;
+    }
+
+    .hero .title .title-small {
+        font-size: 1.3em;
+        padding-left: 1.1em;
+        margin-bottom: 0.3em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero {
+        padding: 8em 1em 2.5em;
+    }
+
+    .hero .title .title-small {
+        font-size: 1.1em;
+        padding-left: 1.1em;
+        margin-bottom: 0.3em;
+    }
 }
 
 /* Main */

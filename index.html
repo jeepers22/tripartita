@@ -329,8 +329,15 @@
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script>
 		AOS.init({
+			// true: una sóla vez, false: cada vez que aparece
 			once: true,
-			startEvent: 'load'
+			// startEvent: 'load' solución a problema que se cargaban fuera de tiempo
+			startEvent: 'load',
+			// APAGADO DE ANIMACIONES AOS PARA MOBILE
+			disable: function () {
+				var maxWidth = 738;
+				return window.innerWidth < maxWidth;
+			}
 		});
 	</script>
 	<script src="assets/js/jquery.min.js"></script>
