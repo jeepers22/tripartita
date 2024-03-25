@@ -4044,10 +4044,6 @@ body.is-menu-visible #menu .close {
 }
 
 @media screen and (max-width: 980px) {
-    #footer {
-        padding: 3em 0 1em 0;
-    }
-
     #footer > .inner {
         -moz-flex-direction: column-reverse;
         -webkit-flex-direction: column-reverse;
