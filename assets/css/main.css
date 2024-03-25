@@ -2814,7 +2814,7 @@ button:disabled,
 
     .rocket-img {
         width: 150%;
-        transform: translateX(-13.8em);
+        transform: translateX(-13em);
     }
 
     .mision {
@@ -2870,24 +2870,24 @@ button:disabled,
     }
 
     .welcome {
-        padding: 2.5em 8.7em 5em 2.5em;
+        padding: 3.5em 7em 9em 2.5em;
     }
 
-    /* .welcome p {
-        max-width: 10em;
-    } */
+    .welcome p {
+        max-width: 14.5em;
+    }
 
     .rocket {
-        top: 460px !important;
+        top: 520px !important;
     }
 
     .rocket-img {
         /* width: 170%; */
-        transform: translateX(-14.2em);
+        transform: translateX(-12em);
     }
 
     .mision {
-        margin-top: -33px !important;
+        margin-top: -55px !important;
     }
 }
 
