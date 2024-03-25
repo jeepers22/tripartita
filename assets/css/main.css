@@ -3338,11 +3338,11 @@ body.is-touch .tiles article .content {
 
 @media screen and (max-width: 480px) {
     .tiles {
-        margin: 0;
+        margin: 0 30px;
     }
 
     .tiles article {
-        width: 100%;
+        width: 350px !important;
         /* margin: 1.25em 0 0 0; */
     }
 }
