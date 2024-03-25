@@ -3337,14 +3337,24 @@ body.is-touch .tiles article .content {
 }
 
 @media screen and (max-width: 480px) {
+    /* ANCHO MOBILE POCO F5 */
     .tiles {
-        margin: 0 30px;
+        width: 340px !important;
     }
 
     .tiles article {
-        width: 350px !important;
-        /* margin: 1.25em 0 0 0; */
+        width: 340px !important;
+        height: 360px !important;
     }
+
+    .tiles article > .image:before {
+        height: 360px !important;
+    }
+
+    .tiles article.style2 > a {
+        justify-content: flex-start !important;
+    }
+    /* FIN ANCHO MOBILE POCO F5 */
 }
 
 /* Header */
