@@ -2783,6 +2783,10 @@ button:disabled,
         width: 110%;
         transform: translateX(-4.5em);
     }
+
+    .headings {
+        left: -10px;
+    }
 }
 
 @media screen and (max-width: 736px) {
@@ -4053,10 +4057,6 @@ body.is-menu-visible #menu .close {
         width: 100%;
         margin-left: 0;
         margin-top: 3em;
-    }
-
-    #footer > .inner section:nth-child(2) h2 {
-        left: -10px;
     }
 
     #footer > .inner section {
