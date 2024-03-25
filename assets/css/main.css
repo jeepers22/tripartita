@@ -2768,20 +2768,20 @@ button:disabled,
     }
 
     .welcome {
-        padding: 5em 0 6em 6em;
-    }
-
-    .welcome p {
-        max-width: 20em;
+        padding: 5em 0 8em 6em;
     }
 
     .rocket {
-        top: 700px !important;
+        top: 620px !important;
     }
 
     .rocket-img {
         width: 110%;
         transform: translateX(-4.5em);
+    }
+
+    .mision {
+        margin-top: -28px !important;
     }
 
     .headings {
@@ -2799,21 +2799,22 @@ button:disabled,
     }
 
     .welcome {
-        padding: 3.5em 8.7em 5em 4em;
+        padding: 3.5em 8.7em 5em 3.3em;
     }
 
     .welcome p {
-        max-width: 14.5em;
+        max-width: 20em;
+        font-size: 0.9em;
     }
 
     .rocket {
-        top: 570px !important;
+        top: 430px !important;
         overflow: hidden;
     }
 
     .rocket-img {
         width: 150%;
-        transform: translateX(-13em);
+        transform: translateX(-13.8em);
     }
 
     .mision {
@@ -2830,26 +2831,63 @@ button:disabled,
     }
 }
 
+@media screen and (max-width: 520px) {
+    #main {
+        padding-bottom: 0 !important;
+    }
+
+    .hero-welcome {
+        top: -340px;
+    }
+
+    .welcome {
+        padding: 3.5em 8.7em 5em 4em;
+    }
+
+    .welcome p {
+        max-width: 14.5em;
+        font-size: 1em;
+    }
+
+    .rocket {
+        top: 480px !important;
+        overflow: hidden;
+    }
+
+    .rocket-img {
+        width: 170%;
+        transform: translateX(-16em);
+    }
+
+    .mision {
+        margin-top: 0px !important;
+    }
+}
+
 @media screen and (max-width: 480px) {
     .hero-welcome {
         top: -330px;
     }
 
     .welcome {
-        padding: 3.5em 8.7em 5em 3em;
+        padding: 2.5em 8.7em 5em 2.5em;
     }
 
-    .welcome p {
+    /* .welcome p {
         max-width: 10em;
-    }
+    } */
 
     .rocket {
-        top: 655px !important;
+        top: 460px !important;
     }
 
     .rocket-img {
-        width: 180%;
-        transform: translateX(-15em);
+        /* width: 170%; */
+        transform: translateX(-14.2em);
+    }
+
+    .mision {
+        margin-top: -33px !important;
     }
 }
 
