@@ -3274,7 +3274,7 @@ body.is-touch .tiles article .content {
         grid-template-columns: repeat(3, 1fr);
         max-width: 800px;
         flex-wrap: nowrap;
-        overflow: auto;
+        overflow-x: scroll;
         scroll-snap-type: x mandatory;
         margin: 0 auto;
     }
@@ -3282,7 +3282,7 @@ body.is-touch .tiles article .content {
     .tiles article {
         width: 380px !important;
         flex-shrink: 0;
-        scroll-snap-align: start;
+        scroll-snap-align: center;
         /* margin: 0 calc(100% - 380px); */
         /* margin-left: 50px; */
         align-items: center;
