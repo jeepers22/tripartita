@@ -3273,13 +3273,13 @@ body.is-touch .tiles article .content {
 
     /* SCROLL HORIZONTAL SERVICIOS */
     .tiles {
-        display: grid;
+        /* display: grid;
         justify-content: space-between;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr); */
         max-width: 800px;
-        flex-wrap: nowrap;
-        overflow-x: scroll;
-        scroll-snap-type: x mandatory;
+        flex-wrap: wrap;
+        /* overflow-x: scroll;
+        scroll-snap-type: x mandatory; */
         margin: 0 auto;
     }
 
