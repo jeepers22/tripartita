@@ -3025,6 +3025,10 @@ button:disabled,
     gap: 1.5em;
 }
 
+.inner i {
+    display: none;
+}
+
 .tiles article {
     -moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
     -webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
@@ -3286,6 +3290,29 @@ body.is-touch .tiles article .content {
         /* margin: 0 calc(100% - 380px); */
         /* margin-left: 50px; */
         align-items: center;
+    }
+
+    .inner i {
+        position: absolute;
+        display: block;
+        z-index: 1;
+        /* top: 0; */
+        font-size: 25px;
+        width: 30px;
+        height: 100%;
+        text-align: center;
+        /* background-color: rgba(0, 0, 0, 0.1); */
+        color: rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        /* line-height: 95px; */
+    }
+
+    .inner i.fa-chevron-left {
+        left: 0;
+    }
+
+    .inner i.fa-chevron-right {
+        right: 20px;
     }
 
     /* FIN SCROLL HORIZONTAL SERVICIOS */
