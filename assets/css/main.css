@@ -3025,6 +3025,10 @@ button:disabled,
     gap: 1.5em;
 }
 
+#expand-tiles {
+    display: none;
+}
+
 .inner i {
     display: none;
 }
@@ -3272,7 +3276,7 @@ body.is-touch .tiles article .content {
     } */
 
     /* SCROLL HORIZONTAL SERVICIOS */
-    .tiles {
+    /* .tiles {
         display: grid;
         justify-content: space-between;
         grid-template-columns: repeat(3, 1fr);
@@ -3281,7 +3285,7 @@ body.is-touch .tiles article .content {
         overflow-x: scroll;
         scroll-snap-type: x mandatory;
         margin: 0 auto;
-    }
+    } */
 
     .tiles article {
         width: 380px !important;
@@ -3305,14 +3309,6 @@ body.is-touch .tiles article .content {
         color: rgba(0, 0, 0, 0.5);
         cursor: pointer;
         /* line-height: 95px; */
-    }
-
-    .inner i.fa-chevron-left {
-        left: 0;
-    }
-
-    .inner i.fa-chevron-right {
-        right: 20px;
     }
 
     /* FIN SCROLL HORIZONTAL SERVICIOS */
@@ -3393,17 +3389,37 @@ body.is-touch .tiles article .content {
     .tiles article.style9:hover > .image:before {
         background-color: #33cfcf !important;
     }
+
 }
 
 @media screen and (max-width: 930px) {
     .tiles {
         max-width: 400px;
+        height: 1100px;
+        overflow-y: hidden;
+        margin: auto;
     }
+
+    #expand-tiles {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin: 20px auto 0;
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.1);
+        width:380px;
+    }
+
+    #expand-tiles span.fa-chevron-up {
+        display: none;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
     /* ANCHO MOBILE POCO F5 */
-    .tiles {
+    .tiles, #expand-tiles {
         width: 340px !important;
     }
 
