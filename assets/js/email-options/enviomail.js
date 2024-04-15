@@ -11,10 +11,12 @@ enviarMail = async () => {
     }
 
     const mensaje = {
-        from: "maxitolalala@gmail.com",
+        from: formObject.email,
         to: "maxizero@gmail.com",
+        name: formObject.name,
+        telephone: formObject.tephone,
         subject: "Mail de pruebas de Tripartita",
-        text: "Este es un correo del formulario de pruebas y estoy cansado",
+        text: formObject.message,
     }
 
     const transport = nodemailer.createTransport(config)
@@ -24,4 +26,3 @@ enviarMail = async () => {
 }
 
 enviarMail()
-// export { enviarMail }  PROBAR ESTO
