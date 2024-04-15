@@ -3398,6 +3398,7 @@ body.is-touch .tiles article .content {
         height: 1100px;
         overflow-y: hidden;
         margin: auto;
+        transition: all 1s ease-in-out;
     }
 
     #expand-tiles {

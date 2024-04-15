@@ -8,7 +8,7 @@ expand.addEventListener("click", () => {
     if (expand.className === 'active') {
         expand.className = ""
         expandText.innerText = "Ver menos"
-        cards.style.cssText = "height: 3300px"
+        cards.style.cssText = "height: 3400px"
         chevronDown.style.cssText = "display: none;"
         chevronUp.style.cssText = "display: inline;"
     } else {
