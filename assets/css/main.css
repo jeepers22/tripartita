@@ -3832,42 +3832,47 @@ body.is-menu-visible #menu .close {
 
 .hero .dinamic-logo > * {
     position: absolute;
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
 }
 
 .hero .dinamic-logo img[data-triangulo="izq"] {
-    transform: translate(-35em, 10em);
-    left: -1.5em;
-    top: 1.2em;
-    transition: all 0.9s ease-out;
-}
-
-.hero:hover .dinamic-logo img[data-triangulo="izq"] {
-    transform: translate(-50%, -50%);
-    transition: all 0.8s ease-out;
+    /* position: absolute; */
+    left: 11em;
+    top: -8em;
+    /* transform: translate(11em, -8em); */
+    /* transition: all 0.9s ease-out; */
 }
 
 .hero .dinamic-logo img[data-triangulo="mid"] {
-    transform: translate(-10em, -5em);
-    transition: all 0.9s ease-out;
-}
-
-.hero:hover .dinamic-logo img[data-triangulo="mid"] {
-    transform: translate(-50%, -50%);
-    transition-duration: 0.5s;
+    /* position: absolute; */
+    left: 13em;
+    top: -9.1em;
+    /* transform: translate(-10em, -5em);
+    transition: all 0.9s ease-out; */
 }
 
 .hero .dinamic-logo img[data-triangulo="der"] {
+    /* position: absolute; */
+    left: 13.3em;
+    top: -7.2em;
     /* transform: translate(25em, 3.8em);
-    left: 0.5em;
-    top: 2em; */
-    transition: all 0.9s ease-out;
+    transition: all 0.9s ease-out; */
 }
 
-.hero:hover .dinamic-logo img[data-triangulo="der"] {
+/* .hero:hover .dinamic-logo img[data-triangulo="izq"] {
+    transform: translate(-50%, -50%);
+    transition: all 0.8s ease-out;
+} */
+
+/* .hero:hover .dinamic-logo img[data-triangulo="mid"] {
+    transform: translate(-50%, -50%);
+    transition-duration: 0.5s;
+} */
+
+/* .hero:hover .dinamic-logo img[data-triangulo="der"] {
     transform: translate(-50%, -50%);
     transition-duration: 0.7s;
-}
+} */
 
 .hero .title .title-small,
 .hero .title .title-big {
