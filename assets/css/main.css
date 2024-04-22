@@ -3840,15 +3840,16 @@ body.is-menu-visible #menu .close {
     transform: rotate(-50deg); 
     opacity: 0;
     scale: 0.5;
-    animation: left-triangle 7s .5s infinite;
+    animation: left-triangle 9s .5s infinite;
 }
 
 @keyframes left-triangle {
-    45% {
+    35% {
+        transform: translate(50%,10%)  rotate(0deg);
         opacity: 1;
         scale: 1;
     }
-    50% {
+    80% {
         transform: translate(50%,10%)  rotate(0deg);
         opacity: 1;
         scale: 1;
@@ -3866,15 +3867,16 @@ body.is-menu-visible #menu .close {
     transform: rotate(20deg);
     opacity: 0;
     scale: 0.7;
-    animation: mid-triangle 7s .5s infinite;
+    animation: mid-triangle 9s .5s infinite;
 }
 
 @keyframes mid-triangle {
-    40% {
+    35% {
+        transform: translate(-15%, 53%) rotate(0deg);
         opacity: 1;
         scale: 1;
     }
-    50% {
+    80% {
         transform: translate(-15%, 53%) rotate(0deg);
         opacity: 1;
         scale: 1;
@@ -3892,15 +3894,16 @@ body.is-menu-visible #menu .close {
     transform: rotate(30deg);
     opacity: 0;
     scale: 0.4;
-    animation: right-triangle 7s .5s infinite;
+    animation: right-triangle 9s .5s infinite;
 }
 
 @keyframes right-triangle {
     35% {
+        transform: translate(-60%, -7%) rotate(0deg);
         opacity: 1;
         scale: 1;
     }
-    50% {
+    80% {
         transform: translate(-60%, -7%) rotate(0deg);
         opacity: 1;
         scale: 1;
