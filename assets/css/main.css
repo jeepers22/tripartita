@@ -3835,71 +3835,80 @@ body.is-menu-visible #menu .close {
 }
 
 .hero .dinamic-logo img[data-triangulo="izq"] {
-    left: 11em;
-    top: -8em;
-    animation: left-triangle 10s infinite;
+    left: 7.6em;
+    top: -8.7em;
+    transform: rotate(-50deg); 
+    opacity: 0;
+    scale: 0.5;
+    animation: left-triangle 7s .5s infinite;
 }
 
 @keyframes left-triangle {
     45% {
-        opacity: 0;
-        scale: 0.5;
-    }
-    50% {
-        transform: translate(-100%,-20%) rotate(-50deg);
-        opacity: 0;
-        scale: 0.5;
-    }
-    90% {
-        transform: translate(0, 0) rotate(0deg);
         opacity: 1;
         scale: 1;
+    }
+    50% {
+        transform: translate(50%,10%)  rotate(0deg);
+        opacity: 1;
+        scale: 1;
+    }
+    90% {
+        transform: translate(0, 0)  rotate(-50deg);
+        opacity: 0;
+        scale: 0.5;
     }
 }
 
 .hero .dinamic-logo img[data-triangulo="mid"] {
-    left: 13em;
-    top: -9.1em;
-    animation: mid-triangle 10s infinite;
+    left: 13.9em;
+    top: -12.7em;
+    transform: rotate(20deg);
+    opacity: 0;
+    scale: 0.7;
+    animation: mid-triangle 7s .5s infinite;
 }
 
 @keyframes mid-triangle {
     40% {
-        opacity: 0;
-        scale: 0.7;
-    }
-    55% {
-        transform: translate(20%, -80%) rotate(20deg);
-        opacity: 0;
-        scale: 0.7;
-    }
-    90% {
-        transform: translate(0, 0) rotate(0deg);
         opacity: 1;
         scale: 1;
+    }
+    50% {
+        transform: translate(-15%, 53%) rotate(0deg);
+        opacity: 1;
+        scale: 1;
+    }
+    90% {
+        transform: translate(0, 0) rotate(20deg);;
+        opacity: 0;
+        scale: 0.7;
     }
 }
 
 .hero .dinamic-logo img[data-triangulo="der"] {
-    left: 13.3em;
-    top: -7.2em;
-    animation: right-triangle 10s infinite;
+    left: 17.4em;
+    top: -6.6em;
+    transform: rotate(30deg);
+    opacity: 0;
+    scale: 0.4;
+    animation: right-triangle 7s .5s infinite;
 }
 
 @keyframes right-triangle {
     35% {
-        opacity: 0;
-        scale: 0.4;
-    }
-    50% {
-        transform: translate(150%, 20%) rotate(30deg);
-        opacity: 0;
-        scale: 0.4;
-    }
-    90% {
-        transform: translate(0, 0) rotate(0deg);
         opacity: 1;
         scale: 1;
+    }
+    50% {
+        transform: translate(-60%, -7%) rotate(0deg);
+        opacity: 1;
+        scale: 1;
+    }
+    90% {
+        transform: translate(0, 0) rotate(30deg);
+        opacity: 0;
+        scale: 0.4;
     }
 }
 
@@ -3958,18 +3967,18 @@ body.is-menu-visible #menu .close {
 
 @media screen and (max-width: 1280px) {
     .hero .dinamic-logo img[data-triangulo="izq"] {
-        left: 10em;
-        top: -10em;
-    }
-
-    .hero .dinamic-logo img[data-triangulo="mid"] {
-        left: 12em;
+        left: 6em;
         top: -11em;
     }
-
+    
+    .hero .dinamic-logo img[data-triangulo="mid"] {
+        left: 13em;
+        top: -15.2em;
+    }
+    
     .hero .dinamic-logo img[data-triangulo="der"] {
-        left: 12em;
-        top: -9em;
+        left: 16.8em;
+        top: -8.5em;
     }
 }
 
@@ -3994,6 +4003,8 @@ body.is-menu-visible #menu .close {
     .hero .dinamic-logo img[data-triangulo="mid"],
     .hero .dinamic-logo img[data-triangulo="der"] {
         animation: none;
+        opacity: 1;
+        scale: 1;
     }
 
     .hero .dinamic-logo img[data-triangulo="izq"] {
